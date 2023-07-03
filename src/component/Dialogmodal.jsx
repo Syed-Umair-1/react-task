@@ -215,10 +215,10 @@ setPersonName([])
                         renderValue={(selected) => selected.join(", ")}
                         MenuProps={MenuProps}
                       >
-                        {users.map((items) => (
-                          <MenuItem key={items.id} value={items.user}>
-                            <Checkbox checked={personName.indexOf(items.user) > -1} />
-                            <ListItemText primary={items.user} />
+                        {users.map((items,index) => (
+                          <MenuItem key={index} value={items}>
+                            <Checkbox checked={personName.indexOf(items) > -1} />
+                            <ListItemText primary={items} />
                           </MenuItem>
                         ))}
                       </Select>

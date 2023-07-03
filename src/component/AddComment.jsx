@@ -25,7 +25,7 @@ function AddComment() {
     fetchData();
   }, []);
   const [open, setOpen] = useState(false);
-  
+  const sortData= data.map((items)=>items.user).sort()
   return (
     <div className="home_container">
       <div>
@@ -36,8 +36,8 @@ function AddComment() {
                 User List
               </Button>
               <Menu {...bindMenu(popupState)}  >
-              {data.map((items)=>
-                <MenuItem onClick={popupState.close}   key={items.id}>{items.user}</MenuItem>
+              {sortData.map((items,index)=>
+                <MenuItem onClick={popupState.close}   key={index}>{items}</MenuItem>
                 )}
                 <MenuItem className="btn"  onClick={()=>setOpen(true)}   >Add User</MenuItem>
 
@@ -47,7 +47,7 @@ function AddComment() {
         </PopupState>
       </div>
       <div className='popup_btn' >
-     <Dialogmodal users={data} />
+     <Dialogmodal users={sortData} />
      <AddUserModal open={open} setOpen={setOpen} data={data} fetchData={fetchData} />
       </div>
     </div>
