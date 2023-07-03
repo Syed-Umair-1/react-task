@@ -1,0 +1,83 @@
+.comment_container{
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* .modal_container{
+  max-height: 100% !important;
+} */
+.css-2zwj5t-MuiPaper-root-MuiDialog-paper{
+  max-width: 80% !important;
+}
+.popup_btn{
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment_head{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.user_comment{
+  display: flex;
+}
+.user_name{
+  /* padding: 10px; */
+ padding-top: 2px;
+ padding-left: 15px;
+}
+.comment_head span:first-child{
+background-color: lightblue;
+padding: 5px;
+border-radius: 10px;
+}
+.tagged_name{
+  background-color: skyblue;
+  margin: 8px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.user_name textarea{
+  width: 800px;
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .user_name textarea {
+    width: 600px;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .user_name textarea {
+    width: 300px;
+  }
+}
+#demo-multiple-checkbox{
+width: 780px ;
+}
+@media (min-width: 800px) and (max-width: 1100px) {
+  #demo-multiple-checkbox {
+    width: 600px;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  #demo-multiple-checkbox {
+    width: 300px;
+  }
+}
+.btn{
+  margin-top: 10px !important;
+  background-color: #1976d2 !important;
+  color: white !important;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.btn_d{
+  margin-top: 10px !important;
+  margin-top: 10px;
+  background-color: silver !important;
+  color: white !important;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
